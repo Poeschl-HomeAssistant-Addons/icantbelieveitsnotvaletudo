@@ -1,4 +1,6 @@
 name: Draft release from new main push
+
+# yamllint disable-line rule:truthy
 on:
   push:
     branches:
