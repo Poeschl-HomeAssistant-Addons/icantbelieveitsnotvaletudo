@@ -10,4 +10,6 @@ jobs:
   workflows:
     uses: Poeschl-HomeAssistant-Addons/workflows/.github/workflows/addon-deploy.yaml@main
     secrets:
-      DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+      dispatch_token: ${{ secrets.DISPATCH_TOKEN }}
+    with:
+      version: "${{ github.event.release.tag_name }}"
