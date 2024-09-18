@@ -1,4 +1,4 @@
-name: Check addon with linters
+name: Addon CI
 
 # yamllint disable-line rule:truthy
 on:
