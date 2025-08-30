@@ -8,7 +8,7 @@ updates:
       GH actions:
         dependency-type: production
   - package-ecosystem: "npm"
-    directory: "/root/server"
+    directory: "icantbelieveitsnotvaletudo/root/server"
     schedule:
       interval: "monthly"
     groups:
