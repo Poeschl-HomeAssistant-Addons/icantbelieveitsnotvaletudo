@@ -12,6 +12,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
 	libpango1.0-dev=1.56.3-1 \
 	build-essential=12.12 \
 	libjpeg62-turbo-dev=1:2.1.5-4 \
+	libatomic1=14.2.0-19 \
 	&& npm install -g n@10.2.0 && n 18.16.1
 
 # Splited RUN for better layer caching
@@ -43,6 +44,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
 		libcairo2=1.18.4-1+b1 \
 		libpango-1.0-0=1.56.3-1 \
 		libjpeg62-turbo=1:2.1.5-4 \
+		libatomic1=14.2.0-19 \
 	  && npm cache clean -f && npm install -g n@10.2.0 && n 18.16.1 \
 		&& apt-get clean \
     && rm -rf /var/lib/apt/lists/*
