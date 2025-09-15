@@ -4,7 +4,7 @@ FROM $BUILD_FROM AS BUILD
 ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get -y --no-install-recommends install \
-	git=1:2.39.5-0+deb12u1 \
+	git=1:2.39.5-0+deb12u2 \
 	npm=9.2.0~ds1-1 \
 	python3=3.11.2-1+b1 \
 	libpixman-1-dev=0.42.2-1 \
